@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Marca elementos para animação de entrada
   document.querySelectorAll(
-    '.hero__text, .hero__media, .sobre__text, .sobre__media, .card, .testimonial, .galeria__item, .parceria__inner'
+    '.hero__text, .hero__media, .sobre__text, .sobre__media, .card, .resultado__item, .testimonial, .galeria__item, .parceria__inner'
   ).forEach(el => el.setAttribute('data-reveal', ''));
 
   const observer = new IntersectionObserver((entries) => {
