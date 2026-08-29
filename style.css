@@ -4,14 +4,15 @@
 
 :root {
   --cream: #ffffff;
-  --cream-soft: #f7dee0;
+  --cream-soft: #f5d6d3;
   --charcoal: #2e2223;
   --charcoal-soft: #6b5456;
-  --terracotta: #8c4a50;
-  --terracotta-dark: #6e3539;
-  --gold: #d98f93;
+  --terracotta: #7d2438;
+  --terracotta-dark: #5c1a29;
+  --bordo-escuro: #3b1420;
+  --gold: #c6a25b;
   --white: #ffffff;
-  --border: #efc9cc;
+  --border: #edc7c3;
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -93,7 +94,7 @@ h1, h2, h3 {
 .btn--primary {
   background: var(--terracotta);
   color: var(--white);
-  box-shadow: 0 8px 24px rgba(140, 74, 80, 0.28);
+  box-shadow: 0 8px 24px rgba(125, 36, 56, 0.28);
 }
 .btn--primary:hover { background: var(--terracotta-dark); transform: translateY(-2px); }
 
@@ -350,7 +351,7 @@ h1, h2, h3 {
 
 /* ---------- Parceria ---------- */
 .parceria {
-  background: var(--charcoal);
+  background: var(--bordo-escuro);
   color: var(--cream);
   padding: 90px 0;
 }
