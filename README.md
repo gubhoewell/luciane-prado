@@ -8,22 +8,24 @@ Site institucional em HTML + CSS + JS puro (`index.html`, `style.css`, `script.j
 
 Padrão do nicho: hero com CTA de WhatsApp, seção "Sobre" com credenciais, grid de tratamentos, depoimentos reais, CTA final. Segui esse padrão com tom mais próximo do que a Lu escreveu no PDF (naturalidade, conexão com o paciente).
 
-## Pendências antes de publicar
+## Status
 
-1. ~~Fotos reais~~ ✅ feito — `images/hero-luciane.jpg`, `images/procedimento.jpg`, `images/galeria-1.jpg` e `images/galeria-2.jpg` já são fotos reais da Lu (extraídas dos prints que você mandou no chat). Seção "Bastidores do consultório" criada com elas.
+✅ **No ar:** https://gubhoewell.github.io/luciane-prado/
+Repo: https://github.com/gubhoewell/luciane-prado
 
-2. **Número de WhatsApp** — substitua `55SEUNUMEROAQUI` em `index.html` (aparece 4x: hero, seção parceria, footer, botão flutuante) pelo número real da Lu, formato `55DDDNUMERO` (ex: `5548999999999`).
+1. ~~Fotos reais~~ ✅ feito — todas as fotos em `images/` são reais da Lu (hero, procedimentos, galeria "Bastidores", 5 casos de Antes & Depois com a marca d'água dela).
 
-3. **Endereço/cidade** — coloquei "Grande Florianópolis / SC" de forma genérica (conforme o PDF). Se ela já tiver endereço fixo de consultório, me passa que eu atualizo.
+2. ~~Número de WhatsApp~~ ✅ feito — `5543984375923` (DDD 43, mesmo número de antes da mudança pra SC — se ela trocou de número, é só avisar). Mensagem pré-preenchida em todos os CTAs de agendamento: *"Olá, Luciane! Vi o seu site e adorei os resultados 💛 Gostaria de agendar uma avaliação."* — sinaliza pra ela que o lead veio do site.
+
+3. **Endereço/cidade** — ainda genérico, "Grande Florianópolis / SC" (conforme o PDF). Se ela tiver endereço fixo de consultório, atualizo.
 
 4. **Depoimentos** — usei 3 falas reais dos prints que você mandou (anonimizados como "Paciente"). Se quiser trocar para nome/iniciais reais, é só falar.
 
-## Como publicar no GitHub Pages
+## Como publicar mudanças
 ```bash
 cd /Users/gustavobeirohoewell/Documents/CaludeCode/projetos/luciane-prado
-git init
-git add .
-git commit -m "Site Luciane Prado"
-gh repo create luciane-prado --public --source=. --push
+git add -A
+git commit -m "descrição da mudança"
+git push
 ```
-Depois ativar GitHub Pages nas configurações do repo (branch `main`, pasta raiz).
+GitHub Pages já está ativo e atualiza sozinho a cada push (leva ~1min pra propagar).
